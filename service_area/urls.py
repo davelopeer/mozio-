@@ -11,12 +11,13 @@ urlpatterns = [
 # Routers
 from rest_framework import routers
 from provider.api.viewsets import ProviderViewSet
-from area.api.viewsets import ServiceAreaViewSet
+from area.api.viewsets import ServiceAreaViewSet, FindPolygonsViewSet
 
 router_v1 = routers.DefaultRouter()
 
 router_v1.register(r'providers', ProviderViewSet)
 router_v1.register(r'areas', ServiceAreaViewSet)
+router_v1.register(r'find-polygons', FindPolygonsViewSet)
 
 urlpatterns += [
   path('api/v1/', include(router_v1.urls))

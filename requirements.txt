@@ -9,6 +9,9 @@ django-filter==22.1
 djangorestframework==3.14.0
 drf-yasg==1.21.4
 filelock==3.8.0
+geographiclib==2.0
+geojson==2.5.0
+geopy==2.3.0
 idna==3.4
 inflection==0.5.1
 itypes==1.2.0
